@@ -1,0 +1,28 @@
+{
+  "name": "@Tradomatic/trdm-definitions-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build && npm publish"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Tradomatic/trdm-definitions-module.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.2.1",
+    "typescript": "^4.1.3"
+  }
+}
