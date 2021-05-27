@@ -74,6 +74,7 @@ export const GET_TRADERS_QUERY: string = `select * from trader as tr inner join 
 
 export const USER_INFO_QUERY = `
   SELECT
+    analytic_user.analytic_user_ as userId,
     analytic_user.phone AS phone,
     (
       CASE telegram_subscribe.telegram_id
@@ -103,5 +104,5 @@ export const USER_INFO_QUERY = `
     SELECT viber_id, COUNT(1) AS actions FROM viber_message_log
     GROUP BY viber_id
   ) AS viber_actions ON viber_subscribe.viber_id = viber_actions.viber_id
-  WHERE analytic_user.analytic_user_ = $1;
+  WHERE analytic_user.phone = $1;
 `;
