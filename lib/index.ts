@@ -4,3 +4,4 @@ export * from "./analytic";
 export * from "./amo-crm";
 export * from "./prices";
 export * from "./trial";
+export * from "./phone";
