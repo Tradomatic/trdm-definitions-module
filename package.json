@@ -1,6 +1,6 @@
 {
-  "name": "@Tradomatic/trdm-definitions-module",
-  "version": "1.0.2",
+  "name": "@tradomatic/trdm-definitions-module",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
